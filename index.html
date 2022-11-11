@@ -1,16 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="./client/public/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>SOC Starter</title>
 
-		<link href="./client/styles/index.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div id="root"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Nose Belgium</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/a2d1c0f59d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire Swash">
+    
+</head>
 
-		<script type="module" src="./client/src/init.js"></script>
-	</body>
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="images/logo/finalogo.jpeg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="customorders.html">Custom Orders</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="vidposter">
+        <video src="images/banners/freeshipping.mp4" class="videoposter" autoplay loop muted></video>
+    </div>    <!--<section id="promo" class="section-p1">
+        
+        <div class="promopic">
+            <img src="images/Merry Christmas (1).jpg">
+        </div>
+        <div class="promowords">
+            <h2>Speciale kerstcadeaumanden nu beschikbaar!!!</h2>
+            <h4>Gratis levering in Antwerpen en Brussel</h4>
+            <button>SHOP NOW</button>
+        </div>
+        <div class="promopic">
+            <img src="images/Merry Christmas (1).jpg">
+        </div>
+    </section>-->
+    <section id="landing">
+        <h2>pink nose belgium</h2>
+        <h4><span>geschenkmanden</span> gevuld met precies wat ze willen!</h4>
+    </section>
+
+    <section id="specials" >
+        <video src="images/banners/specialoffer.mp4" class="videoposter" autoplay loop muted></video>
+        <div class="vidposter">
+            <video src="images/banners/specaile kerstcadeau.mp4" class="videoposter" autoplay loop muted></video>
+            <button href="shop.html">SHOP NOW</button>
+
+        </div>    
+        <div class="pro-container">
+            <div class="pro">
+                <img src="images/sample.jpeg" alt="">
+                <div class="des">
+                    <h5>Red Nose basket (Kerst Special) </h5>
+                    <h4>€29,95</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="images/sample.jpeg" alt="">
+                <div class="des">
+                    <h5>Green Nose Basket (Mojiti Special)  </h5>
+                    <h4>€29,95</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/sample.jpeg" alt="">
+                <div class="des">
+                    <h5>Yellow Nose basket (Nieuwe Mama Special) </h5>
+                    <h4>€29,95</h4>
+                </div>
+            </div>
+            
+            <div class="pro">
+                <img src="images/sample.jpeg" alt="">
+                <div class="des">
+                    <h5>Pink Nose basket (Onze Special) </h5>
+                    <h4>€29,95</h4>
+                </div>
+            </div>
+        </div>
+        <div class="specaialmore">
+                <button scr="shop.html">LOAD MORE</button>
+            </div>
+    </section>
+    <section id="banners">
+    
+        <!--<video src="images/banners/posters.mp4" alt="" class="postervideo" >-->
+        <div class="posters">
+            
+            <img src="images/banners/3.png" alt="" class="poster2">
+            
+            <img src="images/banners/4.png" alt="" class="poster4">
+        
+            <img src="images/banners/1.png" alt="" class="poster1">
+        </div>
+        
+    </section>
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Meld je aan voor onze nieuwsbrief</h4>
+            <p>Ontvang e-mail updates over onze speciale manden en laatste aanbiedingens.</p>
+        </div>
+        <div class="signupform">
+            <input type="text" placeholder="Jouw e-mailadres"/>
+            <button>Sign Up</button>
+        </div>
+    </section>    
+    <footer>
+        <div class="socialmedia">
+            <h4>Follow Us</h4>
+            <div class="smicons">
+                <div class="smii">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100087482235001">pinknosebelgium</a>
+                </div>
+                <div class="smii">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://instrgram.com/pinknosebelgium">pinknosebelgium</a>
+                </div>  
+            </div>
+        </div>
+        <div class="footers">
+            <div class="contact">
+            <h4>Contact</h4>
+            <p><strong>Telefoon:</strong> 0472845618</p>
+            <p><strong>Beschikbare Uren:</strong> 8:00 - 22:00</p>
+            <p><strong>Email:</strong> contact@pinknosebelgium.com </p>
+            
+        </div>
+        <div class="info">
+            <h4>More Information</h4>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+        <div class="securedpayment">
+            <p>Secured Payments Gateaways</p>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+        </div>
+        </div>
+        
+        <div class="copyright">
+            <img src="images/logo/finalogo.jpeg" alt="" class="logo">
+            © 2022 pinknosebelgium
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
