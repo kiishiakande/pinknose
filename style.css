@@ -1,0 +1,441 @@
+@import url('https: //fonts.googleapis.com/css2?family-Spartan: wght@100; 200; 300; 400; 500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46x;
+    line-height: 64px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    padding: 40px 80px;
+}
+body{
+    width: 100%;
+}
+/* HEADER*/
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #Ffffff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 60px;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 5px ;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1a1a1ac0;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+#navbar li a.active::after{
+    content:  "";
+    width: 30%;
+    height: 2px;
+    background: #1a1a1a;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#navbar li a .cart{
+    color: #FEC5C6;
+}
+
+/* PROMO SECTION */
+
+#promo{
+    background-color: #A77F87 ;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 2em;
+    /*background-image: url(images/Merry\ Christmas.jpg);
+    background-repeat: repeat;*/ 
+}
+#promo .promopic img{
+    width: 100px;
+    text-align: left;
+    padding: 10px;
+}
+#promo .promowords h2{
+    font-weight: 400;
+    line-height: 1em;
+    animation: animate 3s linear infinite;
+    outline: none;
+}
+@keyframes animate{
+    20%{
+        color: #FB9EA2 ;
+        text-shadow: none;
+    }
+    50%{
+        color: #fff;
+        
+    }
+}
+
+#promo .promowords h4{
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+
+
+#promo .promowords{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#promo .promowords button{
+    color: #A37978;
+    border: 0;
+    background-color: #Ffffff;
+    padding: 10px 30px 10px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+#promo .promowords button:hover{
+    background-color: #D29FAA;
+}
+
+/* HOME PAGE*/
+
+#landing{
+    background-color: #FDE8EC;
+    height: 50vh;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#landing h4{
+    padding: 10px 0;
+    color: #D29FAA;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+
+#landing h2{
+    color: #FB9EA2;
+    font-weight: 700; 
+    font-family: "Berkshire Swash", serif;
+    font-size: 100px;
+    padding: 30px 0;
+    line-height: 1em;
+
+}
+
+#landing button{
+    color: #A37978;
+    border: 0;
+    background-color: #Ffffff;
+    padding: 14px 60px 14px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 15px;
+    transition: 0.2s ease;  
+}
+
+#landing button:hover{
+    background-color: #D29FAA;
+}
+
+/* Special Products */
+
+#specials{
+    text-align: center;
+
+}
+.specialsheader{
+    color: #A37978;
+    font-weight: 300;
+}
+
+#specials .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px;
+    border-radius: 50px;
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+#specials .pro img{
+    width: 100%;
+    
+
+}
+
+#specials .pro .des{
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+#specials .pro .des h5{
+    padding: 7px;
+    color: #A37978;
+    font-size: 14px;
+}
+
+#specials .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #A37978;
+}
+
+.pro-container{
+    display:flex;
+    justify-content:center;
+    padding-top:20px ;
+    flex-wrap: wrap;
+
+}
+
+#specials button{
+    color: #A37978;
+
+    background-color: #Ffffff;
+    padding: 14px 60px 14px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 15px;
+}
+#specials button:hover{
+    background-color: #D29FAA;
+}
+
+#specials .specialsheader :hover{
+    border-style: solid;
+    border-color: #A37978;
+}
+
+#specials .videoposter{
+    background-repeat: repeat;
+}
+
+/* BANNERS*/
+#banners{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    background-image: url(images/specaile.png);
+}
+#banners .posters{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    align-items: center;
+}
+#banners img{
+    width: 500px;
+} 
+#banners .posters1 img{
+    align-items: left;
+
+}
+#banners .posters2 img{
+    align-items: right;
+
+}
+#banners .posters3{
+    text-align: left;
+
+}
+.videoposter{
+    left: 0;
+    width: 100%;
+    height: 250px;
+}
+
+.postervideo{
+    width: 100px;
+
+}
+/* NEWSLETTER */
+
+#newsletter{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #FDE8EC;
+    background-position: 20% ;
+}
+
+#newsletter .newstext{
+    padding: 15px 50px;
+
+}
+
+#newsletter .signupform{
+    padding: 15px 50px;
+    display: flex;
+}
+
+#newsletter .newstext h4{
+    font-weight: 300;
+    color: #A77F87;
+    font-size: 25px;
+}
+
+#newsletter .signupform button{
+    color: #A37978 ;
+    background-color: #Ffffff;
+    height: 30px;
+    padding: 0 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+}
+#newsletter .signupform button:hover{
+    background-color: #D29FAA;
+}
+
+#newsletter .signupform input{
+    height: 30px;
+    width: 300px;
+}
+
+/* FOOTER */
+.socialmedia{
+    text-align: center;
+    background-color: #FDE8EC;
+}
+.socialmedia h4{
+    font-weight: 300;
+    color: #A37978;
+    padding: 15px;
+}
+.smicons{
+    padding : 0 30px ;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.socialmedia .smicons a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1a1a1ac0;
+    transition: 0.3s ease;
+}
+
+.smii{
+    text-align: center;
+    padding: 5px;
+}
+.footers{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    padding: 30px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.info a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1a1a1ac0;
+    transition: 0.3s ease;
+}
+
+.info h4{
+    font-weight: 300;
+    color: #A77F87;
+    font-size: 25px;
+}
+.contact h4{
+    font-weight: 300;
+    color: #A77F87;
+    font-size: 25px;
+}
+
+.copyright{
+    text-align: center;
+    color: #1a1a1ac0;
+    padding: 20px;
+
+}
