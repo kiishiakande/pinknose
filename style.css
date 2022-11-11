@@ -260,10 +260,12 @@ body{
     flex-wrap: wrap;
 
 }
-
+.specaialmore{
+    padding: 25px;
+}
 #specials button{
     color: #A37978;
-
+    
     background-color: #Ffffff;
     padding: 14px 60px 14px 60px;
     background-repeat: no-repeat;
@@ -378,6 +380,8 @@ body{
     text-align: center;
     background-color: #FDE8EC;
 }
+  
+
 .socialmedia h4{
     font-weight: 300;
     color: #A37978;
