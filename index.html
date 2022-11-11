@@ -15,18 +15,22 @@
 <body>
     
     <section id="header">
-        <a href="#"><img src="images/logo/finalogo.jpeg" class="logo" alt=""></a>
+        <a href="#"><img src="images/logo/finalogo.jpeg" class="logo" alt="logo"></a>
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="customorders.html">Custom Orders</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i></a></li>
+                <li><a href="cart.html" alt="shopping cart"><i class="fa-solid fa-cart-shopping cart" ></i></a></li>
             </ul>
         </div>
     </section>
+	
     <div class="vidposter">
-        <video src="images/banners/freeshipping.mp4" class="videoposter" autoplay loop muted></video>
+        <video src="images/banners/freeshipping.mp4" class="videoposter"  loop autoplay muted></video>
+		<script>
+			document.getElementById('videoposter').play();
+		</script>
     </div>    <!--<section id="promo" class="section-p1">
         
         <div class="promopic">
@@ -47,10 +51,10 @@
     </section>
 
     <section id="specials" >
-        <video src="images/banners/specialoffer.mp4" class="videoposter" autoplay loop muted></video>
+        <video src="images/banners/specialoffer.mp4" class="videoposter" loop autoplay  muted></video>
         <div class="vidposter">
-            <video src="images/banners/specaile kerstcadeau.mp4" class="videoposter" autoplay loop muted></video>
-            <button href="shop.html">SHOP NOW</button>
+            <video src="images/banners/specaile kerstcadeau.mp4" class="videoposter"  loop autoplay muted></video>
+            <button href="shop.html" type="button">SHOP NOW</button>
 
         </div>    
         <div class="pro-container">
@@ -86,7 +90,7 @@
             </div>
         </div>
         <div class="specaialmore">
-                <button scr="shop.html">LOAD MORE</button>
+                <button scr="shop.html" type="button">LOAD MORE</button>
             </div>
     </section>
     <section id="banners">
@@ -109,7 +113,7 @@
         </div>
         <div class="signupform">
             <input type="text" placeholder="Jouw e-mailadres"/>
-            <button>Sign Up</button>
+            <button type="button">Sign Up</button>
         </div>
     </section>    
     <footer>
@@ -126,6 +130,9 @@
                 </div>  
             </div>
         </div>
+		<!--<div>
+			<img src="images/specaile bluebg1).png" alt="" class="strip">
+		</div>-->
         <div class="footers">
             <div class="contact">
             <h4>Contact</h4>
